@@ -1,4 +1,4 @@
-  ---
+---
 name: "Isibeli"
 suites:
 - "precise"
@@ -11,7 +11,7 @@ packages:
 - "unzip"
 - "nsis"
 - "faketime"
-reference_datetime: "2019-01-13 00:00:00"
+reference_datetime: "2018-09-18 00:00:00"
 remotes:
 - "url": "https://github.com/IsibeliCoin/isibeli.git"
   "dir": "isibeli"
@@ -31,7 +31,7 @@ script: |
   unzip ../build/bitcoin08-deps-win32-gitian-r13.zip
   cd $HOME/build/
   #
-  cd Isibeli
+  cd isibeli
   export PATH=$STAGING/host/bin:$PATH
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
